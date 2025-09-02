@@ -1,0 +1,242 @@
+[
+  {
+    "timestamp": "2025-09-01T02:05:12Z",
+    "ip": "10.0.0.1",
+    "event": "Successful user login",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "Standard user access"
+  },
+  {
+    "timestamp": "2025-09-01T02:10:45Z",
+    "ip": "192.168.2.15",
+    "event": "Database query completed",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "Routine database operation"
+  },
+  {
+    "timestamp": "2025-09-01T02:15:23Z",
+    "ip": "40.77.167.129",
+    "event": "Multiple rapid requests",
+    "anomaly": true,
+    "severity": 0.92,
+    "summary": "Likely automated bot traffic"
+  },
+  {
+    "timestamp": "2025-09-01T02:45:30Z",
+    "ip": "172.31.200.5",
+    "event": "Scheduled backup started",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "Routine system maintenance"
+  },
+  {
+    "timestamp": "2025-09-01T03:02:44Z",
+    "ip": "192.168.1.50",
+    "event": "Repeated failed logins",
+    "anomaly": true,
+    "severity": 0.95,
+    "summary": "Possible brute force attack"
+  },
+  {
+    "timestamp": "2025-09-01T03:10:01Z",
+    "ip": "10.0.0.2",
+    "event": "File access granted",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "User accessed document"
+  },
+  {
+    "timestamp": "2025-09-01T03:18:10Z",
+    "ip": "203.0.113.12",
+    "event": "Access to restricted endpoint",
+    "anomaly": true,
+    "severity": 0.81,
+    "summary": "Suspicious access attempt"
+  },
+  {
+    "timestamp": "2025-09-01T03:55:00Z",
+    "ip": "192.168.3.4",
+    "event": "System service status check",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "Health check reported normal"
+  },
+  {
+    "timestamp": "2025-09-01T04:05:56Z",
+    "ip": "10.0.0.15",
+    "event": "Unusual outbound traffic volume",
+    "anomaly": true,
+    "severity": 0.88,
+    "summary": "Potential data exfiltration"
+  },
+  {
+    "timestamp": "2025-09-01T04:30:15Z",
+    "ip": "172.16.10.10",
+    "event": "Web server request",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "Standard web traffic"
+  },
+  {
+    "timestamp": "2025-09-01T04:45:22Z",
+    "ip": "172.16.22.34",
+    "event": "Unexpected admin privilege escalation",
+    "anomaly": true,
+    "severity": 0.97,
+    "summary": "Unauthorized privilege escalation attempt"
+  },
+  {
+    "timestamp": "2025-09-01T05:20:05Z",
+    "ip": "192.168.4.100",
+    "event": "Successful FTP transfer",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "Legitimate file transfer"
+  },
+  {
+    "timestamp": "2025-09-01T05:33:49Z",
+    "ip": "198.51.100.77",
+    "event": "Multiple geographic logins in short time",
+    "anomaly": true,
+    "severity": 0.9,
+    "summary": "Suspicious account compromise activity"
+  },
+  {
+    "timestamp": "2025-09-01T06:12:11Z",
+    "ip": "203.0.113.45",
+    "event": "Access from known malicious IP",
+    "anomaly": true,
+    "severity": 0.99,
+    "summary": "Confirmed malicious IP access"
+  },
+  {
+    "timestamp": "2025-09-01T06:30:40Z",
+    "ip": "10.0.0.3",
+    "event": "User logged out",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "Normal user session termination"
+  },
+  {
+    "timestamp": "2025-09-01T06:57:33Z",
+    "ip": "192.168.10.22",
+    "event": "Unusual process creation",
+    "anomaly": true,
+    "severity": 0.77,
+    "summary": "Possible malware execution"
+  },
+  {
+    "timestamp": "2025-09-01T07:15:00Z",
+    "ip": "172.16.5.25",
+    "event": "API call completed",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "Routine application API access"
+  },
+  {
+    "timestamp": "2025-09-01T07:41:20Z",
+    "ip": "203.0.113.88",
+    "event": "Port scanning detected",
+    "anomaly": true,
+    "severity": 0.83,
+    "summary": "Reconnaissance activity"
+  },
+  {
+    "timestamp": "2025-09-01T08:05:10Z",
+    "ip": "10.0.0.4",
+    "event": "Report generated",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "Automated report generation"
+  },
+  {
+    "timestamp": "2025-09-01T08:29:15Z",
+    "ip": "192.168.1.100",
+    "event": "High number of DNS requests",
+    "anomaly": true,
+    "severity": 0.7,
+    "summary": "Possible DNS tunneling attempt"
+  },
+  {
+    "timestamp": "2025-09-01T08:50:35Z",
+    "ip": "172.16.8.8",
+    "event": "User accessed public resource",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "Standard public access"
+  },
+  {
+    "timestamp": "2025-09-01T09:03:02Z",
+    "ip": "198.51.100.200",
+    "event": "Suspicious file upload",
+    "anomaly": true,
+    "severity": 0.89,
+    "summary": "Potential malicious file activity"
+  },
+  {
+    "timestamp": "2025-09-01T09:35:18Z",
+    "ip": "10.1.2.50",
+    "event": "Successful login with multi-factor authentication",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "Secure user login"
+  },
+  {
+    "timestamp": "2025-09-01T09:47:50Z",
+    "ip": "10.1.2.3",
+    "event": "Failed attempt to disable security software",
+    "anomaly": true,
+    "severity": 0.96,
+    "summary": "Malware persistence technique"
+  },
+  {
+    "timestamp": "2025-09-01T10:15:14Z",
+    "ip": "203.0.113.99",
+    "event": "Access attempt outside business hours",
+    "anomaly": true,
+    "severity": 0.65,
+    "summary": "Suspicious login timing"
+  },
+  {
+    "timestamp": "2025-09-01T10:50:00Z",
+    "ip": "192.168.7.77",
+    "event": "Application updated",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "Routine software update"
+  },
+  {
+    "timestamp": "2025-09-01T11:22:40Z",
+    "ip": "192.168.5.5",
+    "event": "Abnormal CPU usage spike",
+    "anomaly": true,
+    "severity": 0.74,
+    "summary": "Possible cryptomining activity"
+  },
+  {
+    "timestamp": "2025-09-01T11:55:00Z",
+    "ip": "172.16.15.15",
+    "event": "User session active",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "User is actively using the system"
+  },
+  {
+    "timestamp": "2025-09-01T12:08:59Z",
+    "ip": "198.51.100.56",
+    "event": "Frequent password reset requests",
+    "anomaly": true,
+    "severity": 0.72,
+    "summary": "Account takeover attempt"
+  },
+  {
+    "timestamp": "2025-09-01T12:30:10Z",
+    "ip": "10.0.0.5",
+    "event": "Log rotation completed",
+    "anomaly": false,
+    "severity": 0.0,
+    "summary": "Automated log maintenance"
+  }
+]

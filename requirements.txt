@@ -1,0 +1,11 @@
+langchain
+langchain-community
+langchain-core
+faiss-cpu
+streamlit
+slack-sdk
+python-telegram-bot
+huggingface_hub
+transformers
+sentence-transformers
+torch

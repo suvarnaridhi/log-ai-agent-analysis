@@ -1,0 +1,48 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtualenvs
+venv/
+.venv/
+env/
+ENV/
+
+# Environment / secrets
+.env
+.env.* 
+secrets.json
+*.pem
+*.key
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# # Logs and runtime outputs
+# *.log
+# analysis_report.txt
+
+# Test / cache
+.pytest_cache/
+.ipynb_checkpoints/
+
+# # Optional: don't accidentally push real logs
+# anomalies.json
+
+# Misc
+coverage.xml
+htmlcov/
