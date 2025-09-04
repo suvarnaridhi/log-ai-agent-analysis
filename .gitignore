@@ -48,4 +48,4 @@ coverage.xml
 htmlcov/
 
 credentials.json
-token.pickle
+token.json
