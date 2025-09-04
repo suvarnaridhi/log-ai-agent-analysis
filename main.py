@@ -1,8 +1,10 @@
+import os
 import json
 from agent.summary_agent import SummaryAgent
 import argparse
 from agent.llm import build_llm
 from agent.query_agent import QueryAgent
+from agent.alert_agent import AlertAgent
 
 
 def load_anomalies(path="anomalies.json"):
@@ -28,8 +30,15 @@ def format_anomalies(anomalies):
 
 def main():
     parser=argparse.ArgumentParser(description="Log Analysis Agent")
-    parser.add_argument("--mode",choices=["summarize","query"],required=True,help="Mode to run")
+    parser.add_argument("--mode",choices=["summarize","query","alert"],required=True,help="Mode to run")
     parser.add_argument("--question", type=str, help="Question to ask the query agent")
+    parser.add_argument("--to_email", type=str, help="Recipient email for alerts")
+    parser.add_argument(
+        "--threshold",
+        type=float,
+        default=0.95,
+        help="Severity threshold for sending alerts (default: 0.95)",
+    )
     args = parser.parse_args()
 
     try:
@@ -46,6 +55,8 @@ def main():
         try:
             agent=SummaryAgent()
             report=agent.analyze_logs(anomalies_text)
+            print("\n Analysis Report: ")
+            print(report)
             with open("analysis_report.txt", "w", encoding="utf-8") as f:
                 f.write(report)
             print("\nReport saved to analysis_report.txt")
@@ -62,6 +73,16 @@ def main():
             print(answer)
         except Exception as e:
             print(f"An error occurred: {e}")
+    elif args.mode=="alert":
+        to_email=args.to_email or os.getenv("ALERT_EMAIL")
+        try:
+            agent=AlertAgent(to_email=to_email)
+            result = agent.send_alert(anomalies,threshold=args.threshold)
+            if result:
+                print("\nAlert Sent:")
+                print(result)
+        except Exception as e:
+            print(f"Failed to send alert: {e}")
 
 if __name__ == "__main__":
     main()

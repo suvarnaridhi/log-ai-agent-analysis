@@ -46,3 +46,6 @@ pip-wheel-metadata/
 # Misc
 coverage.xml
 htmlcov/
+
+credentials.json
+token.pickle
